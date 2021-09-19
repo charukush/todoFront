@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "todoFront"
+    }
+  },
+  "defaultProject": "todoFront",
+  "cli": {
+    "analytics": false
+  }
 }

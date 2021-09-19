@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { UserLogInComponent } from './user-log-in/user-log-in.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MyAccountComponent } from './my-account/my-account.component';
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+    UserLogInComponent,
+    MyAccountComponent
+    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
