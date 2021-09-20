@@ -1,4 +1,8 @@
 <H1>To Do User LogIn</H1>
 <label>User-LogIn :</label>
-<input type = "text" [formControl] = "userId"><br><br>
+<input type = "text"  [formControl] = "userId" ><br><br>
+
 <button (click)="userCheck()">Submit</button>
+<p *ngIf = "showErrorMessage">
+    User not Found! 
+</p>

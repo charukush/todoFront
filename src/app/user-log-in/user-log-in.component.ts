@@ -10,6 +10,7 @@ import { UserService } from '../user.service';
 })
 export class UserLogInComponent implements OnInit {
   userId = new FormControl('');
+  showErrorMessage = false;
 
   constructor(
     private service: UserService,
@@ -25,7 +26,8 @@ export class UserLogInComponent implements OnInit {
     if (user['resp']['Item']) {
       this.router.navigate(['/myAccount', {userId: this.userId.value}]);
     } else {
-      console.log(`User ${this.userId.value} does not exist`);
+      this.showErrorMessage = true;
+      //console.log(`User ${this.userId.value} does not exist`);
     }
     
   }
